@@ -5,7 +5,7 @@ from django.urls import reverse
 class Recipe(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='images', blank=True, null=True)  # Add this line
+    image = models.ImageField(upload_to='images', blank=True, null=True)
 
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)

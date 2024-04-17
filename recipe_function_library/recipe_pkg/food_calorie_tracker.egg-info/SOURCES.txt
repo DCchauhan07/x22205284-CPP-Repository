@@ -1,7 +1,0 @@
-LICENSE
-README.md
-setup.py
-food_calorie_tracker.egg-info/PKG-INFO
-food_calorie_tracker.egg-info/SOURCES.txt
-food_calorie_tracker.egg-info/dependency_links.txt
-food_calorie_tracker.egg-info/top_level.txt
