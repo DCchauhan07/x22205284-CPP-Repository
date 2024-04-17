@@ -1,0 +1,20 @@
+{% extends "recipes/base.html" %} 
+
+{% block head %}
+<style>
+  body {
+    /* Multicolored gradient background */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 50%, #b2fefa 100%);
+  }
+</style>
+{% endblock head %}
+
+{% block content %}
+<div class="container" style="padding: 20px;">
+    <h2 style="color: #00008b; font-size: 24px; font-weight: bold;">You have been logged out!</h2>
+    <p style="color: #6c757d; font-size: 16px;">Thank you for visiting. Come back soon!</p>
+    <div style="margin-top: 20px;">
+        <a class="btn btn-primary" href="{% url 'user-login' %}" style="background-color: #00008b; border-color: #00008b;">Log back in here</a>
+    </div>
+</div>
+{% endblock content %}

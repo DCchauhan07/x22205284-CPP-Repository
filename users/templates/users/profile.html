@@ -1,0 +1,37 @@
+{% extends "recipes/base.html" %}
+
+{% block content %}
+<style>
+  body {
+    /* Multicolored gradient background */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 50%, #b2fefa 100%);
+    /* Darker text color */
+    color: #333; /* You can adjust the color code to your preference */
+  }
+</style>
+
+<div class="container">
+  <h1>Welcome, {{ user.username }}</h1>
+  <p>This is your profile page. Here, you can view and edit your profile information.</p>
+  <p>Email: {{ user.email }}</p>
+
+  <h2>About Me</h2>
+  <p>I am a passionate cook who loves experimenting with new recipes and flavors. Cooking has always been a therapeutic activity for me, and I enjoy spending hours in the kitchen creating delicious meals for my family and friends.</p>
+  
+  <h2>My Interests</h2>
+  <ul>
+    <li>Traveling: Exploring new destinations and experiencing different cultures.</li>
+    <li>Reading: Getting lost in a good book is one of my favorite pastimes.</li>
+    <li>Hiking: I love spending time outdoors, especially hiking through scenic trails and mountains.</li>
+  </ul>
+
+  <h2>My Favorite Recipes</h2>
+  <p>Here are a few of my favorite recipes that I love to cook:</p>
+  <ol>
+    <li>Chole Bhature</li>
+    <li>Pastry</li>
+    <li>Chole Kulche</li>
+    <li>Chocolate Chip Cookies</li>
+  </ol>
+</div>
+{% endblock content %}
