@@ -1,25 +1,97 @@
 {% extends 'recipes/base.html' %} 
 
 {% block content %}
-<div class="container" style="background-color: #f2f2f2;">
-  <h1 style="font-size: 36px; font-weight: bold;">About App</h1>
+<style>
+
+  .card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
   
-  <p style="font-size: 18px;">Welcome to Recipes Realm, your ultimate destination for culinary inspiration! Whether you're a seasoned chef or a novice cook, we're here to help you discover delicious recipes, master cooking techniques, and explore the wonderful world of food.</p>
-  
-  <h2 style="font-size: 24px; font-weight: bold;">Our Mission</h2>
-  
-  <p style="font-size: 18px;">At Recipes Realm, our mission is to make cooking enjoyable, accessible, and rewarding for everyone. We believe that cooking should be a creative and fulfilling experience, and we're committed to providing you with the tools and resources you need to succeed in the kitchen.</p>
-  
-  <h2 style="font-size: 24px; font-weight: bold;">What We Offer</h2>
-  
-  <p style="font-size: 18px;">On our website, you'll find a vast collection of recipes ranging from quick and easy meals to gourmet delights. Whether you're craving comfort food, healthy options, or international cuisines, we've got you covered. Our recipes are carefully curated, tested, and presented with detailed instructions and beautiful imagery to ensure your cooking experience is a success every time.</p>
-  
-  <h2 style="font-size: 24px; font-weight: bold;">Get Involved</h2>
-  
-  <p style="font-size: 18px;">We love hearing from our community! If you have any questions, feedback, or recipe requests, don't hesitate to reach out to us. You can also join the conversation on our social media channels to share your culinary creations, tips, and tricks with fellow food enthusiasts.</p>
-  
-  <h2 style="font-size: 24px; font-weight: bold;">Happy Cooking!</h2>
-  
-  <p style="font-size: 18px;">Thank you for choosing our App as your trusted cooking companion. We hope our website inspires you to get creative in the kitchen and enjoy the wonderful flavors of homemade meals. Happy cooking!</p>
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+ 
+  .card-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .box:hover {
+    transform: translateY(-5px);
+  }
+
+  .box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .box p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+</style>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Random Food Quote</h5>
+    <p class="card-text"><strong>{{ context.quotes }}</strong></p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h1 class="card-title">About App</h1>
+    <p class="card-text">Welcome to Recipes Realm, your ultimate destination for culinary inspiration! Whether you're a seasoned chef or a novice cook, we're here to help you discover delicious recipes, master cooking techniques, and explore the wonderful world of food.</p>
+    
+    <h2>Our Mission</h2>
+    
+    <p>At Recipes Realm, our mission is to make cooking enjoyable, accessible, and rewarding for everyone. We believe that cooking should be a creative and fulfilling experience, and we're committed to providing you with the tools and resources you need to succeed in the kitchen.</p>
+    
+    <h2>What We Offer</h2>
+    
+    <p>On our website, you'll find a vast collection of recipes ranging from quick and easy meals to gourmet delights. Whether you're craving comfort food, healthy options, or international cuisines, we've got you covered. Our recipes are carefully curated, tested, and presented with detailed instructions and beautiful imagery to ensure your cooking experience is a success every time.</p>
+    
+    <h2>Get Involved</h2>
+    
+    <p>We love hearing from our community! If you have any questions, feedback, or recipe requests, don't hesitate to reach out to us. You can also join the conversation on our social media channels to share your culinary creations, tips, and tricks with fellow food enthusiasts.</p>
+    
+    <h2>Happy Cooking!</h2>
+    
+    <p>Thank you for choosing our App as your trusted cooking companion. We hope our website inspires you to get creative in the kitchen and enjoy the wonderful flavors of homemade meals. Happy cooking!</p>
+  </div>
 </div>
 {% endblock content %}

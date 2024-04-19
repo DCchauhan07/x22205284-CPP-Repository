@@ -1,7 +1,0 @@
-LICENSE
-README.md
-setup.py
-food.py.egg-info/PKG-INFO
-food.py.egg-info/SOURCES.txt
-food.py.egg-info/dependency_links.txt
-food.py.egg-info/top_level.txt
