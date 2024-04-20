@@ -15,7 +15,6 @@ django-cors-headers==4.3.1
 django-crispy-forms==2.1
 docutils==0.20.1
 exceptiongroup==1.2.0
-food_library @ file:///home/ec2-user/environment/recipe_proj/foodproj/food_library/dist/food_library-0.0.1-py3-none-any.whl#sha256=55dce90163794983281998023b909a5b4ccc1752466b9929090a6f2ba483db82
 gunicorn==22.0.0
 idna==3.6
 importlib_metadata==7.1.0
